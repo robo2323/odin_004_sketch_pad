@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Sketch-Pad</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/overcast/jquery-ui.css">
+    <link href="css/index.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <div class="ui-widget-content toolbar">
+        <p>Hover mouse over tools for descriptions</p>
+
+        <div class="color-picker" title="pick a drawing colour by mixing red green and blue with the sliders">
+            <h3>Color Picker</h3>
+
+            <div id="red" title="pick a drawing colour by mixing red green and blue with the sliders"></div>
+            <div id="green" title="pick a drawing colour by mixing red green and blue with the sliders"></div>
+            <div id="blue" title="pick a drawing colour by mixing red green and blue with the sliders"></div>
+
+            <div id="swatch" class="ui-widget-content ui-corner-all" title="current drawing colour"></div>
+            <button id="random-color" class="ui-corner-all ui-widget" title="choose a random colour to draw with">Random Color</button>
+            <hr>
+
+        </div>
+        <div class="size-selector">
+
+            <h3 title="changes the number and resolution of squares in the drawing grid. Higher numbers mean smaller 'pixels'">Change/reset grid size</h3>
+            <div><input id="spinner" name="value" title="changes the number and resolution of squares in the drawing grid. Higher numbers mean smaller 'pixels'"></div>
+            <hr>
+
+        </div>
+
+        <form id="draw-effect">
+            <h3>Effect Selector</h3>
+            <div id="effect">
+                <input type="radio" id="none" name="radio" value="none"><label for="none" title="draws solid color">Solid</label>
+                <input type="radio" id="trail" name="radio" value="trail"><label for="trail" title="leaves a fading trail behind">Trail</label>
+                <input type="radio" id="shader" name="radio" value="incGrad"><label for="shader" title="gradually shades up to solid colour">Shader</label>
+                <input type="radio" id="erase" name="radio" value="erase"><label for="erase" title="gradually erases to white">Eraser</label>
+            </div>
+        </form>
+        <hr>
+        <button id="reset" class="ui-corner-all ui-widget" title="erase the current drawing and choose a new grid size">Clear drawing</button>
+        <div class="help">
+            <h2>To save the image use print screen [PrntScn]</h2>
+        </div>
+
+
+    </div>
+
+
+    <div class="container">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
